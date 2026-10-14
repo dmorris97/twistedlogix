@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TwistedLogix LLC | Software Development for Audio Engineering</title>
+  <meta name="description" content="TwistedLogix LLC is a software company that designs and builds mobile and software applications.">
+  <meta property="og:title" content="TwistedLogix LLC">
+  <meta property="og:description" content="Software company building mobile and software applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://twistedlogix.com">
+  <link rel="canonical" href="https://twistedlogix.com/">
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --surface: #ffffff;
+      --text: #1c1b29;
+      --muted: #5d5b72;
+      --accent: #5b3df5;
+      --accent-dark: #4128c9;
+      --border: #e4e2f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12111c;
+        --surface: #1c1a2b;
+        --text: #f1f0fa;
+        --muted: #a9a7c2;
+        --accent: #8b74ff;
+        --accent-dark: #a393ff;
+        --border: #2d2a44;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .brand { font-weight: 700; font-size: 1.15rem; letter-spacing: -0.01em; text-decoration: none; color: var(--text); }
+    .brand span { color: var(--accent); }
+    nav a { margin-left: 22px; text-decoration: none; color: var(--muted); font-size: 0.95rem; }
+    nav a:hover { color: var(--accent); }
+
+    .hero { padding: 88px 0 72px; }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      max-width: 700px;
+    }
+    .hero p { margin-top: 20px; max-width: 600px; color: var(--muted); font-size: 1.1rem; }
+    .btn {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 12px 24px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover { background: var(--accent-dark); }
+
+    section { padding: 56px 0; }
+    section h2 { font-size: 1.6rem; letter-spacing: -0.01em; margin-bottom: 16px; }
+    .lead { max-width: 680px; color: var(--muted); }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 28px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: 0.97rem; }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+      max-width: 560px;
+      margin-top: 24px;
+    }
+    .contact-box dl { display: grid; grid-template-columns: 110px 1fr; row-gap: 10px; }
+    .contact-box dt { color: var(--muted); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0 40px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#top">Twisted<span>Logix</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#what-we-do">What we do</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <h1>Thoughtfully built software and mobile apps.</h1>
+      <p>TwistedLogix LLC is a software company focused on designing, building, and publishing applications that are reliable, useful, and easy to use.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <h2>About TwistedLogix</h2>
+        <p class="lead">TwistedLogix LLC is an independent software development company. We create applications for mobile and other platforms, handling the full process from concept and design through engineering, testing, and release.</p>
+      </div>
+    </section>
+
+    <section id="what-we-do">
+      <div class="wrap">
+        <h2>What we do</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Mobile applications</h3>
+            <p>Design, development, and publication of apps for iPhone and iPad.</p>
+          </div>
+          <div class="card">
+            <h3>Software development</h3>
+            <p>Custom software and tooling built with a focus on audio engineering and utility.</p>
+          </div>
+          <div class="card">
+            <h3>Product design</h3>
+            <p>Clear, user-focused interfaces and experiences that make products simple to use for audio engineering applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="lead">Questions about our company or our apps? Reach out and we'll get back to you.</p>
+        <div class="contact-box">
+          <dl>
+            <dt>Company</dt>
+            <dd>TwistedLogix LLC</dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:admin@twistedlogix.com">admin@twistedlogix.com</a></dd>
+            <dt>Website</dt>
+            <dd><a href="https://twistedlogix.com">twistedlogix.com</a></dd>
+            <!--
+              OPTIONAL: add your business mailing address here if you want one shown, e.g.:
+              <dt>Address</dt>
+              <dd>123 Main St, Suite 100<br>City, ST 00000, USA</dd>
+              Use the same address that is on your D-U-N-S / state registration.
+            -->
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      &copy; 2026 TwistedLogix LLC. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
